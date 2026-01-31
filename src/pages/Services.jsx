@@ -5,7 +5,7 @@ import ServiceHero from "../components/ServiceHero";
 import Navbar from "../components/Navbar";
 import lo from "../assets/images/serve.jpg";
 import Footer from "../components/Footer";
-import FAQ from "../components/Faq.jsx";
+import FAQ from "../components/Questions.jsx";
 
 export default function Services() {
   const fadeSlide = {
