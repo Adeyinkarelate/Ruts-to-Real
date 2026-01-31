@@ -61,7 +61,7 @@ export default function Navbar() {
           {links.map((link) => (
             <label key={link.label} htmlFor="drawer">
               <a
-                href={link.href}
+                href={link.url}
                 className="text-base font-medium hover:opacity-70"
               >
                 {link.label}
@@ -70,11 +70,11 @@ export default function Navbar() {
           ))}
         </div>
 
-        <label htmlFor="drawer" className="mt-auto cursor-pointer">
-          <button className="w-full py-2 rounded-md bg-[#a5b58f] text-[#1d2617] text-sm font-medium shadow-sm hover:bg-[#92a47c]">
+        
+          <Link to="/book-session" className="w-full p-2 my-2 rounded-md bg-[#a5b58f] text-[#1d2617] text-md font-medium shadow-sm hover:bg-[#92a47c]">
             Book Session
-          </button>
-        </label>
+          </Link>
+        
       </div>
     </nav>
   );

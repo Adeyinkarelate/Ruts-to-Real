@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
         </div>
       </section>
 
-      <section className="bg-cream text-soil">
+      <section className="bg-white text-soil">
         <div className="max-w-4xl mx-auto px-6 py-24">
 
           <p className="text-sm text-soil/60 mb-12">

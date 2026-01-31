@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
 
         {/* Links */}
-        <nav className="flex items-center gap-3 text-[13px] text-gray-600">
+        <nav className="flex flex-col md:flex-row items-center gap-3 text-md text-gray-600">
           <Link to="/contact" className="hover:text-black transition">Contact</Link>
           <span className="opacity-50">|</span>
           <Link to="/services" className="hover:text-black transition">Services</Link>
@@ -27,19 +27,19 @@ const Footer = () => {
         {/* Socials */}
         <div className="flex items-center gap-3 text-gray-600">
           <a href="#" aria-label="Facebook" className="hover:text-black transition">
-            <FaFacebookF size={14} />
+            <FaFacebookF size={20} />
           </a>
           <a href="#" aria-label="Instagram" className="hover:text-black transition">
-            <FaInstagram size={15} />
+            <FaInstagram size={20} />
           </a>
           <a href="#" aria-label="Tiktok" className="hover:text-black transition">
-            <FaTiktok size={14} />
+            <FaTiktok size={20} />
           </a>
         </div>
       </div>
 
       {/* Copyright */}
-      <div className="text-[11px] text-gray-500 text-center pb-4">
+      <div className="text-md text-gray-500 text-center pb-4">
         © {new Date().getFullYear()} Ruts to Real — All rights reserved.
       </div>
     </footer>

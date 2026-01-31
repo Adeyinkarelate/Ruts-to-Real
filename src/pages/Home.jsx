@@ -22,7 +22,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <CoachingHero />
-      <section className="w-full   py-30">
+      <section className="w-full bg-white  py-30">
         <div className="container mx-auto px-6 lg:px-12">
           {/* Section Title */}
           <motion.h2
@@ -46,7 +46,7 @@ const Home = () => {
                 viewport={{ once: true, margin: "-100px" }}
                 className="
                 rounded-[20px] border border-gray-300
-                px-6 py-8 bg-cream
+                px-6 py-8 bg-white
                 flex flex-col justify-between
                 shadow-sm hover:shadow-card transition-all
               "
