@@ -9,6 +9,7 @@ import Booking from "./pages/Booking";
 import PrivacyPolicy from "./pages/Privacy";
 import CoachingDisclaimer from "./pages/Disclaimer";
 import TermsAndConditions from "./pages/Terms";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <main>
       <BackToTop />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
