@@ -1,0 +1,43 @@
+@import "tailwindcss"; 
+@plugin "daisyui";
+
+
+@theme {
+  /* COLORS */
+  --color-soil: #1c2618;
+  --color-olive: #667b4a;
+  --color-sage: #b7c89a;
+  --color-cream: #f5f3e8;
+  --color-stone: #4c5547;
+  --color-leaf: #8fa873;
+  --color-clay: #cfbca2;
+
+  /* GRAYS (soft non-harsh neutrals) */
+  --color-gray-900: #2f2f2d;
+  --color-gray-700: #4c4c48;
+  --color-gray-500: #82827b;
+  --color-gray-300: #c8c8bf;
+  --color-gray-100: #e9e9e2;
+
+  /* TYPOGRAPHY */
+  --font-serif: "Playfair Display", "Georgia", serif;
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+
+  /* SHADOWS (very calm / subtle) */
+  --shadow-soft: 0 4px 14px -4px rgba(0,0,0,0.15);
+  --shadow-card: 0 8px 28px -6px rgba(0,0,0,0.18);
+
+  /* SPACING SCALES */
+  --spacing-section: 4rem;
+  --spacing-section-lg: 6rem;
+
+  /* RADII */
+  --radius-soft: 12px;
+  --radius-circle: 9999px;
+
+  /* FONT SIZES */
+  --text-hero: 2.75rem;
+  --text-hero-lg: 3.5rem;
+  --text-hero-xl: 4.25rem;
+}
+

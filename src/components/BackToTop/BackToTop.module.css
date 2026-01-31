@@ -1,0 +1,24 @@
+.icon_sticky {
+    transition: height .3s ease-in;
+    z-index: 99;
+}
+
+
+.icon_sticky.sticky {
+    -webkit-animation: iconSticky .5s ease forwards;
+    animation: iconSticky .5s ease forwards;
+    position: fixed;
+}
+
+
+@keyframes iconSticky {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
