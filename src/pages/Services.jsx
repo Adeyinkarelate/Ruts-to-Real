@@ -112,10 +112,7 @@ export default function Services() {
             </h3>
 
             <p className="text-base text-soil/80 leading-relaxed max-w-md">
-              A deep, reflective coaching journey designed to help you uncover
-              the patterns, stories and emotional habits holding you back — and
-              build a grounded, authentic way of relating to yourself and
-              others.
+             A deeper coaching journey for uncovering patterns, releasing emotional ruts, and building grounded, authentic ways of living and relating.
             </p>
 
             <Link to="/book-session" className="px-5 py-2 rounded-md bg-[#9daa88] text-soil text-sm font-medium shadow-sm hover:bg-[#8ea178] transition">

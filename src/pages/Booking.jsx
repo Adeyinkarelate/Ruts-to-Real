@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import aboutBg from "../assets/images/use.jpg";
 import { Link } from "react-router";
 
+import ContentSection from "../components/ContentSection";
+
 export default function Booking() {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
@@ -51,7 +53,7 @@ export default function Booking() {
             transition={{ duration: 0.6 }}
             className="font-serif text-3xl sm:text-4xl md:text-5xl max-w-3xl text-cream"
           >
-            Book a Clarity Session
+            Begin with a Clarity Session
           </motion.h1>
 
           <motion.p
@@ -60,14 +62,20 @@ export default function Booking() {
             transition={{ delay: 0.1, duration: 0.6 }}
             className="mt-4 max-w-2xl text-cream/85 leading-relaxed"
           >
-            A calm starting point to explore what you’re navigating and decide,
-            together, on supportive next steps.
+            A supportive first step toward clarity, grounded choices, and
+            meaningful change. If you’re feeling stuck, overwhelmed, or
+            uncertain about what to do next in your life, relationships, or
+            family - the Clarity Session is designed to meet you exactly where
+            you are. This is not about fixing you or rushing into long-term
+            commitments. It’s about slowing down, gaining perspective, and
+            identifying what truly matters right now.
           </motion.p>
         </div>
       </section>
-
+      {/* Content  */}
+      <ContentSection />
       {/* BOOKING FORM */}
-      <section className="bg-white text-soil py-24">
+      <section className="bg-white text-soil py-10">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
           {/* LEFT COPY */}
           <motion.div
@@ -77,13 +85,19 @@ export default function Booking() {
             className="text-center md:text-left"
           >
             <h2 className="font-serif text-4xl md:text-5xl tracking-tight">
-              A Thoughtful Way to Begin
+              Ready to Begin?
             </h2>
 
             <p className="mt-6 max-w-md mx-auto md:mx-0 text-soil/70 leading-relaxed">
-              Share a little about what you’re seeking support with, along with
-              a preferred date and time. You’ll receive a personal response
-              within 24–48 hours.
+              You don’t have to have everything figured out. You just need a
+              place to start. <br /> 👉 Start with a Clarity Session No
+              pressure. Just a supportive conversation to help you gain clarity.
+            </p>
+
+            <p className="mt-6 max-w-md mx-auto md:mx-0 text-soil/70 leading-relaxed">
+              <b className="text-black">Still Have Questions?</b> If you’re
+              unsure whether coaching is right for you, or if you have questions
+              before booking, feel free to reach out.
             </p>
 
             <div className="mt-10 space-y-3 text-sm">
@@ -96,23 +110,34 @@ export default function Booking() {
                   hello@rutstoreal.com
                 </a>
               </p>
-
               <p>
-                <span className="font-medium">WhatsApp (Canada):</span>{" "}
+                <span className="font-medium">Email:</span>{" "}
                 <a
-                  href="https://wa.me/1XXXXXXXXXX"
+                  href="mailto:hello@rutstoreal.ca"
                   className="underline underline-offset-4"
                 >
-                  +1 (XXX) XXX-XXXX
+                  hello@rutstoreal.ca
                 </a>
               </p>
+
+              <p>
+                <span className="font-medium">WhatsApp:</span>{" "}
+                <a
+                  href="https://wa.me/15875770208"
+                  className="underline underline-offset-4"
+                >
+                  +1 (587) 577-0208
+                </a>
+              </p>
+              <p className="text-xs text-soil/60 mt-4">I’m happy to help you decide what feels like the right next step.</p>
+{/* 
               <p className="text-xs text-soil/60 mt-4">
                 Coaching services are not a substitute for therapy, medical, or
                 legal advice.
                 <Link to="/disclaimer" className="underline ml-1">
-                  Learn more
+                  Learn morepm
                 </Link>
-              </p>
+              </p> */}
             </div>
           </motion.div>
 
@@ -124,6 +149,10 @@ export default function Booking() {
             className="bg-white rounded-2xl p-8 shadow-xl"
           >
             <h3 className="font-serif text-2xl mb-6">Request a Session</h3>
+            <p className="text-lg text-soil/60 text-center my-4">
+              You’re welcome to request a session using the form below. Your
+              message is received with care and confidentiality.
+            </p>
 
             {success && (
               <div className="mb-4 text-sm bg-sage/15 text-soil p-3 rounded-lg">
@@ -167,7 +196,9 @@ export default function Booking() {
                 <option>Clarity Session</option>
                 <option>Life & Mindset Coaching</option>
                 <option>Marriage & Relationship Coaching</option>
-                <option>Parenting Across Cultures</option>
+                <option>Parenting Coaching</option>
+                <option>Life Transitions & Boundary Coaching</option>
+                <option>Not sure yet</option>
               </select>
 
               {/* DATE + TIME */}
@@ -194,7 +225,7 @@ export default function Booking() {
                 placeholder="Share a little about what you’re navigating"
                 required
                 className="input min-h-55 w-full rounded-lg border border-soil/20 px-4 py-3 text-sm
-      focus:outline-none focus:ring-2 focus:ring-sage/40 bg-white text-black"
+      focus:outline-none focus:ring-2 focus:ring-sage/40 bg-white text-black "
               />
 
               <button

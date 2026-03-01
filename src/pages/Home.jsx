@@ -128,10 +128,9 @@ const Home = () => {
                       leading-relaxed
                     "
           >
-            Ruts to Real offers coaching support for individuals and families
-            navigating emotional and relational challenges, helping them move
-            toward clarity, self-awareness, and empowered decision-making across
-            cultures and generations.
+            At Ruts to Real, personal growth is approached with both compassion
+            and structure — because lasting change requires reflection and
+            disciplined follow-through.
           </motion.p>
         </div>
       </section>
